@@ -1,0 +1,12 @@
+<div class="card" style="width: 100%;">
+  <img [src]="book.imageUrl" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{book.name}}</h5>
+    <p class="card-text">Author: {{book.author}}</p>
+    <p *ngIf="book.price" class="card-text">Price: {{book.price}}</p>
+    <a href="#" class="btn btn-primary float-end">Buy</a>
+  </div>
+</div>
+<!-- Taking data objects form home component  ?-->
+<!-- Display data object -->
+<!-- How do we pass data to component -->

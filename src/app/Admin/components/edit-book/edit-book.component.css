@@ -1,0 +1,10 @@
+.buttonleft
+{
+    padding-left: 1ex;
+    padding-top: 1ex;
+}
+.jumbotron {
+    /* background-image: url(background.jpg); */
+    color: white;
+    text-align: center;
+  }

@@ -1,0 +1,21 @@
+<app-header></app-header>
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-9">
+
+          </div>
+          <div class="col-md-3 login-form">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input [value]="email" (input)="updateEmail($event)" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Password</label>
+                <input [(ngModel)]="password" type="password" class="form-control" id="exampleFormControlInput1">
+              </div>
+
+              <button class="btn btn-success float-end" (click)="handleLoginClick()">Login</button>
+          </div>
+      </div>
+  </div>
