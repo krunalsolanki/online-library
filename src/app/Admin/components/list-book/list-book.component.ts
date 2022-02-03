@@ -23,5 +23,10 @@ export class ListBookComponent implements OnInit {
     )
 
   }
+  deletebook(id:number){  
+    this.bookService.delete(id.toString())
+    .subscribe(() => console.log('Delete successful'));
+       
+  }  
 
 }

@@ -13,13 +13,11 @@ import { ListBookComponent } from './Admin/components/list-book/list-book.compon
 import { AdminModule } from './Admin/admin.module';
 import {  HttpClientModule } from '@angular/common/http';
 import { BookService } from './book/services/book.service';
-import { FormBuilder } from '@angular/forms';
 
 const routes = [
   {path:'', component: HomeComponent},
   {path:'login', component: LoginComponent},
   {path:'register', component: SignupComponent},
-  {path:'editbook/:id', component: EditBookComponent},
   {path:'editbook', component: EditBookComponent},
   {path:'listbook', component: ListBookComponent}
 ];
@@ -37,8 +35,7 @@ const routes = [
     AdminModule,
     RouterModule.forRoot(routes)
     
-   ],
-   exports:[RouterModule],
+  ],
   // Provide services
   providers: [],
   // Startup component

@@ -11,18 +11,18 @@ export class HomeComponent implements OnInit {
 
   books: BookModel[];
 
-  // constructor dependencies are resolved by framework.
   constructor(private bookService: BookService) {
-    this.books = [];
-  }
+    this.books=[];
+   }
 
   // Lifecycle hook-> Component in initialized
   ngOnInit(): void {
-    this.bookService.getAll().subscribe(
-      (values) => { this.books = values; },
-      (err) => { console.log(err); },
-      () => { console.log("Observable data transfer completed") }
-    )
+  this.bookService.getAll().subscribe(
+    (values)=>{this.books=values},
+    (err)=>{console.log},
+    ()=>{console.log("Observable data transfer completed")}
+  )    
+
   }
 
 }

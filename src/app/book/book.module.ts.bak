@@ -11,6 +11,6 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     HttpClientModule
   ],
-  exports: [BookCardComponent]
+  exports: [BookCardComponent],
 })
 export class BookModule { }
