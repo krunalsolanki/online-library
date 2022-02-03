@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BookCardComponent } from './components/book-card/book-card.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -11,6 +10,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     CommonModule,
     HttpClientModule
   ],
-  exports: [BookCardComponent]
+  exports: [BookCardComponent],
 })
 export class BookModule { }
